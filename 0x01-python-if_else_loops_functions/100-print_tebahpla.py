@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-for i in range(25, -1, -1):
-    c = i + ord('A')
-    if i % 2 == 1:
-        c += 32
-    print("{:c}".format(c), end="")
+for index in range(0, 26):
+    word = ord('z') - index
+    if (index % 2 == 1):
+        word = chr(word - ord('a') + ord('A'))
+    else:
+        word = chr(word)
+    print("{}".format(word), end='')
