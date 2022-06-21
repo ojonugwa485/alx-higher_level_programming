@@ -7,6 +7,7 @@ class Node:
 
     def __init__(self, data, next_node=None):
         """Initialize a new Node.
+        
         Args:
             data (int): The data of the new Node.
             next_node (Node): The next node of the new Node.
@@ -47,7 +48,7 @@ class SinglyLinkedList:
     def sorted_insert(self, value):
         """Insert a new Node to the SinglyLinkedList.
         The node is inserted into the list at the correct
-        
+
         ordered numerical position.
         Args:
             value (Node): The new Node to insert.
@@ -70,9 +71,18 @@ class SinglyLinkedList:
     def __str__(self):
         """Define the print() representation of a SinglyLinkedList."""
 
+<<<<<<< HEAD
         values = []
         tmp = self.__head
         while tmp is not None:
             values.append(str(tmp.data))
             tmp = tmp.next_node
         return ('\n'.join(values))
+=======
+        node = self.head
+        while node.next_node and node.next_node.data < value:
+            node = node.next_node
+        if node.next_node:
+            new.next_node = node.next_node
+        node.next_node = new
+>>>>>>> 27264d39cdcb971f119e12ea0c2dca4b1b9cc354
