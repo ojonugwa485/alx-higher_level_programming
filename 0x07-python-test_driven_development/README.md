@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Background Context
 Important notice on intranet checks for Python projects
 Starting from today:
@@ -6,3 +7,6 @@ Based on the requirements of each task, you should always write the documentatio
 The intranet checks for Python projects won’t be released before their first deadline, in order for you to focus more on TDD and think about all possible cases
 We strongly encourage you to work together on test cases, so that you don’t miss any edge case. But not in the implementation of them!
 Don’t trust the user, always think about all possible edge cases
+=======
+0x07-python-test_driven_development
+>>>>>>> 23e38b491c1e0ce055d4b9185542202479fa07e8
